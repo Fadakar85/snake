@@ -31,25 +31,33 @@
             width: 50%;
             height: 5rem;
         }
+        .hello{
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
     </style>
 </head>
 <body>
-    
-    <canvas id="gameCanvas" width="400" height="400"></canvas><br>
+    <div class="hello">
+        <div>
+            <canvas id="gameCanvas" width="400" height="400"></canvas><br>
+        </div>
 
-    <div id="controls">
-        <button id="up">
-            UP
-        </button><br>
-        <button id="left">
-            LEFT
-        </button>
-        <button id="right">
-            RIGHT
-        </button><br>
-        <button id="down">
-            DOWN
-        </button>
+        <div id="controls">
+            <button id="up">
+                UP
+            </button><br>
+            <button id="left">
+                LEFT
+            </button>
+            <button id="right">
+                RIGHT
+            </button><br>
+            <button id="down">
+                DOWN
+            </button>
+        </div>
     </div>
     <script src="snake.js"></script>
 </body>
