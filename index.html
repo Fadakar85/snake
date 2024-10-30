@@ -17,9 +17,37 @@
             border: 2px solid #fff;
             background-color: #000;
         }
+        #controls{
+            margin-right: 2rem;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        #up, #down{
+            width: 60%;
+            height: 5rem;
+        }
+        #left, #right{
+            width: 50%;
+            height: 5rem;
+        }
     </style>
 </head>
 <body>
+    <div id="controls">
+        <button id="up">
+            UP
+        </button><br>
+        <button id="left">
+            LEFT
+        </button>
+        <button id="right">
+            RIGHT
+        </button><br>
+        <button id="down">
+            DOWN
+        </button>
+    </div>
     <canvas id="gameCanvas" width="400" height="400"></canvas>
     <script src="snake.js"></script>
 </body>
