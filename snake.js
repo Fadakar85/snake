@@ -21,6 +21,19 @@ document.addEventListener('keydown', (event) => {
     else if (event.key === 'ArrowRight' && direction !== 'LEFT') direction = 'RIGHT';
 });
 
+document.getElementById('up').addEventListener('click', () => {
+    if (direction !== 'DOWN') direction = 'UP';
+});
+document.getElementById('down').addEventListener('click', () => {
+    if (direction !== 'UP') direction = 'DOWN';
+});
+document.getElementById('left').addEventListener('click', () => {
+    if (direction !== 'RIGHT') direction = 'LEFT';
+});
+document.getElementById('right').addEventListener('click', () => {
+    if (direction !== 'LEFT') direction = 'RIGHT';
+});
+
 function draw() {
     ctx.clearRect(0, 0, canvasSize, canvasSize);
     for (let i = 0; i < snake.length; i++) {
