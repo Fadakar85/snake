@@ -2,7 +2,7 @@ const canvas = document.getElementById("gameCanvas");
 const ctx = canvas.getContext('2d');
 
 const boxSize = 20;
-const canvasSize = 600;
+const canvasSize = 400;
 let direction = 'RIGHT';
 
 let snake = [
